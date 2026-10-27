@@ -1,0 +1,9 @@
+# GitHub Pages: contenido estático desde main / (root).
+# Mantener Jekyll habilitado para aplicar estas exclusiones.
+url: "https://jhlirion.github.io"
+baseurl: ""
+exclude:
+  - docs
+  - scripts
+  - README.md
+  - _site

@@ -18,7 +18,7 @@ Aprobado por el usuario el 28 de octubre de 2026. Esta versión resume el brief 
 
 ## Diseño
 
-Una página principal y dos detalles de soluciones, minimalistas, negro/blanco/plateado, sans serif de sistema salvo la marca manuscrita expresamente conservada. Sin órbita, fotos, logos de proveedores ni visuales 3D. El usuario autorizó un avatar de robot junto al nombre principal, sin pie de imagen y una arquitectura Medallion para analítica y Data Science en la solución de datos. Diagramas SVG propios y transiciones discretas para las tarjetas.
+Una página principal y dos detalles de soluciones, minimalistas, negro/blanco/plateado, sans serif de sistema salvo la marca manuscrita expresamente conservada. Sin órbita, logos de proveedores ni visuales 3D. El usuario proporcionó su retrato para reemplazar el robot junto al nombre principal, con recorte circular tipo Instagram y sin pie de imagen. Autorizó una arquitectura Medallion para analítica y Data Science en la solución de datos. Diagramas SVG propios y transiciones discretas para las tarjetas.
 
 ## Revisión
 

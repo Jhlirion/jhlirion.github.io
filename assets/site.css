@@ -138,12 +138,12 @@ h3 { margin: 0; color: var(--text); font-size: 20px; font-weight: 500; line-heig
   .technology-list>div { grid-template-columns: 1fr; gap: 8px; }
 }
 
-/* Avatar de robot junto al nombre principal. */
+/* Retrato circular junto al nombre principal. */
 .hero-with-portrait { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 48px; align-items: center; }
 .hero-copy { min-width: 0; }
 .hero-with-portrait h1 { font-size: clamp(52px, 7vw, 88px); }
-.hero-portrait { margin: 0; width: 100%; }
-.hero-portrait img { display: block; width: 100%; height: auto; }
+.hero-portrait { margin: 0; width: 100%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; border: 2px solid #73737c; background: var(--surface); }
+.hero-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; transform: scale(1.5); }
 @media (min-width: 701px) and (max-width: 950px) {
   .hero-with-portrait { grid-template-columns: minmax(0, 1fr) 180px; gap: 28px; }
 }

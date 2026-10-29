@@ -20,7 +20,7 @@ Las fotografías, gráficos de servicios, logos de herramientas y animación orb
 
 ## Avatar del encabezado
 
-`assets/profile/robot.svg`: avatar vectorial de robot en blanco y plateado, situado a la derecha del nombre principal. No lleva pie de imagen ni texto de provisionalidad. La alternativa accesible es «Avatar de robot». About contiene únicamente presentación textual; los valores se integran en esa descripción.
+`assets/profile/helton-lirion.jpg`: retrato proporcionado por Helton Lirion, optimizado a JPEG de 720 × 960 píxeles. Se muestra a la derecha del nombre principal con recorte circular mediante CSS y borde plateado. La alternativa accesible es «Retrato de Helton Lirion». El archivo original permanece intacto. About contiene únicamente presentación textual; los valores se integran en esa descripción.
 
 ## Arquitectura Medallion
 

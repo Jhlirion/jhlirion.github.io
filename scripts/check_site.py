@@ -60,7 +60,7 @@ def local_ref(origin, ref):
 
 
 pages = {}
-for name in ('index.html', '404.html'):
+for name in ['index.html', '404.html', *[str(p.relative_to(ROOT)) for p in sorted((ROOT / 'solutions').glob('*.html'))]]:
     path = ROOT / name
     page = Page()
     page.feed(path.read_text())
@@ -80,17 +80,24 @@ for svg in [*(ROOT / 'assets').rglob('*.svg'), ROOT / 'sitemap.xml']:
 source = (ROOT / 'index.html').read_text()
 assert 'https://wa.me/51991814543' in source
 assert 'orbit-toggle' not in source and 'brand-dot' not in source
-assert not any(word in source.lower() for word in ('asisai', 'florec', 'localhost', '127.0.0.1'))
+assert '<h1 id="hero-title">Helton Lirion</h1>' in source
+assert 'Data Engineering <span>·</span> Artificial Intelligence <span>·</span> Business' in source
+assert 'Transformando datos e inteligencia artificial en soluciones que generan valor.' in source
+assert 'Solución de referencia' not in source
+assert 'Data Architecture Optimization' in source
+assert 'AI Agents &amp; Intelligent Automation' in source
+assert all(name in pages[ROOT / 'index.html'].ids for name in ('home', 'about', 'expertise', 'projects', 'contact'))
+assert not any(word in source.lower() for word in ('founder', 'asisai', 'florec', 'localhost', '127.0.0.1'))
 config = (ROOT / '_config.yml').read_text()
 assert not (ROOT / '.nojekyll').exists(), 'No omitir Jekyll: se perderían las exclusiones.'
 for excluded in ('docs', 'scripts'):
     assert f'  - {excluded}' in config
-active = [*(ROOT / 'assets').glob('*.css'), *(ROOT / 'assets').glob('*.js'),
-          *(ROOT / 'assets').glob('*.svg'), *(ROOT / 'assets' / 'graphics').glob('*.svg'),
-          *(ROOT / 'assets' / 'icons').glob('*.svg'), *(ROOT / 'assets' / 'fonts').glob('*')]
+active = [p for p in (ROOT / 'assets').rglob('*') if p.is_file()]
 for path in [*pages, *active]:
     if path.suffix in {'.html', '.js', '.css', '.svg'}:
         content = path.read_text()
+        assert 'solución de referencia' not in content.lower(), f'Etiqueta editorial retirada: {path}'
+        assert not any(word in content.lower() for word in ('founder', 'asisai', 'florec')), f'Referencia reservada: {path}'
         assert not re.search(r'AIza[\w-]{30,}|sk-(?:proj-)?[A-Za-z0-9_-]{20,}|BEGIN (?:RSA |EC )?PRIVATE KEY', content), f'Posible credencial: {path}'
 assert all(p.stat().st_size < 100 * 1024 * 1024 for p in active)
 print('OK: HTML, anclas, recursos, mayúsculas, SVG/XML y exclusiones de publicación.')

@@ -1,6 +1,6 @@
 # jhlirion — sitio personal
 
-Web estática de Helton Lirion: datos, IA y automatización para empresas.
+Web personal estática de Helton Lirion: Data Engineering, Artificial Intelligence y Business. Marca: jhlirion.
 
 ## Vista previa local
 
@@ -19,8 +19,10 @@ node --check assets/site.js
 
 ## GitHub Pages
 
-Configuración remota comprobada el 27 de octubre de 2026: `main`, `/ (root)`, HTTPS activo. `index.html` es la entrada. `_config.yml` excluye documentación y scripts del sitio generado. No añadir `.nojekyll`, porque se perderían esas exclusiones.
+Configuración remota comprobada el 28 de octubre de 2026: `main`, `/ (root)`, HTTPS activo. `index.html` es la entrada. `_config.yml` excluye documentación y scripts del sitio generado. No añadir `.nojekyll`, porque se perderían esas exclusiones.
 
 Un push a `main` activa la publicación con la configuración actual. Revisar los cambios y las validaciones antes de publicar.
+
+Especificación vigente: [brief aprobado](docs/WEB_PERSONAL_BRIEF.md).
 
 Ver [auditoría de preparación](docs/PAGES_READINESS.md), [roadmap](docs/ROADMAP.md) y [créditos visuales](docs/VISUAL_ASSETS.md).

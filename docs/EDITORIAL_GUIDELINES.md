@@ -1,27 +1,13 @@
 # Dirección editorial
 
-Actualización: 27 de octubre de 2026.
+Actualización: 28 de octubre de 2026. Especificación vigente: `WEB_PERSONAL_BRIEF.md`.
 
-## Objetivo actual
+Marca: jhlirion. Nombre: Helton Lirion.
 
-Vender el perfil y los servicios de Helton Lirion a empresas que buscan especialistas en datos e IA.
+Presentación personal de datos, inteligencia artificial y negocio. Las competencias de las cuatro categorías proceden de la descripción suministrada y autorizada por el usuario. No se atribuyen cargos, años de experiencia, clientes, resultados, certificaciones ni dominio de herramientas específicas.
 
-## Restricción explícita del usuario
+Los desarrollos reservados no se muestran ni se nombran en contenido público, recursos, metadatos o datos estructurados. Projects presenta únicamente las dos soluciones de referencia autorizadas. Cada tarjeta y página distingue el diseño propuesto de una implementación real. Las tecnologías se describen como componentes posibles, no como un stack desplegado.
 
-No mostrar los productos o proyectos en los que está trabajando hasta su lanzamiento. No incluir nombres, capturas, enlaces, descripciones ni pistas de esos desarrollos en el sitio ni en sus archivos servidos. Publicar casos futuros requiere autorización específica.
+Contact utiliza únicamente WhatsApp, GitHub e Instagram jhlirion, canales autorizados por el usuario. No agregar datos personales inferidos ni formularios que simulen envío.
 
-## Contenido permitido
-
-- Propuesta de valor profesional.
-- Especialidades: datos, IA y automatización.
-- Servicios, entregables y método de trabajo.
-- Perfil, trayectoria confirmada y canales de contacto.
-- Ejemplos genéricos de necesidades empresariales, sin presentarlos como casos reales.
-
-## Criterios
-
-No inventar clientes, resultados, certificaciones, métricas ni años de experiencia. Precios, plazos y alcance se acuerdan según el contexto. Validar datos profesionales y canales de contacto antes de publicar.
-
-## Oferta de entrada
-
-La web invita a una primera conversación para entender el contexto. El diagnóstico y sus entregables se concretan después según el alcance; no se publican tarifas, plazos ni promesas de resultados.
+Cambios locales y commit autorizados por el usuario. Push y publicación necesitan instrucciones nuevas. Las etiquetas editoriales de referencia y sus aclaraciones repetitivas se retiraron del contenido público por solicitud del usuario; no se han añadido afirmaciones de implementación o resultados.
